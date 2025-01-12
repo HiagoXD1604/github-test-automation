@@ -1,0 +1,17 @@
+Feature: Automação do GitHub
+
+  Scenario: Testar login e navegação no GitHub
+    Given o navegador está aberto
+    And a página inicial do GitHub é acessada
+    When o usuário acessa a página de login
+    And preenche os campos de "Email" e "Senha"
+    And clica no botão de login
+    Then o usuário deve ser autenticado com sucesso
+    And o nome do usuário deve estar visível
+    When o usuário navega para a aba "Repositories"
+    And acessa um repositório aleatório
+    And navega para a aba "Pull Request"
+    Then cria um novo repositório
+    And captura uma screenshot
+    When o usuário realiza logout
+    Then a validação de logout deve ser bem-sucedida
