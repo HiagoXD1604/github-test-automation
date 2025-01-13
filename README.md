@@ -34,7 +34,6 @@ cd NOME_DO_REPOSITORIO
 npm install
 ```
 ### Execução dos Testes
-Existem duas opções de execução para os testes:
 
 1.**Executar os testes pelo Jest:**
 ```
