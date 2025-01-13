@@ -2,7 +2,7 @@
 
 ## Descrição
 
-Este projeto é um teste automatizado utilizando Selenium para abrir janelas de navegador.
+Este projeto é um teste automatizado utilizando Jest controlar um fluxo de criação repositorios e valições variadas no site do Github.
 
 ## Requisitos
 
@@ -34,8 +34,14 @@ cd NOME_DO_REPOSITORIO
 npm install
 ```
 ### Execução dos Testes
-
 1.**Executar os testes pelo Jest:**
+Crie o documento .env no ambiente de execução com suas informações de Email, Senha e Usuário tal como:
+```
+EMAIL="SEU EMAIL"
+PASSWORD="SUA SENHA"
+NAME="NOME USUÁRIO DO GITHUB"
+```
+2.**Executar os testes pelo Jest:**
 ```
 npx jest
 ```
